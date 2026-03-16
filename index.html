@@ -1,10 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90Pace Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Welcome to 90Pace!</h1>
-    <p>Site is working successfully.</p>
+<body class="bg-gray-50 text-gray-900">
+
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">90Pace</h1>
+            <div class="space-x-6">
+                <a href="#" class="hover:text-blue-600">Home</a>
+                <a href="#services" class="hover:text-blue-600">Services</a>
+                <a href="#" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-16 text-center">
+        <h2 class="text-5xl font-extrabold mb-6">Empowering Digital Future</h2>
+        <p class="text-xl text-gray-600 mb-10">We build scalable software solutions for modern businesses.</p>
+        <button class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700">Get Started</button>
+    </main>
+
+    <section id="services" class="max-w-6xl mx-auto px-6 py-16">
+        <h3 class="text-3xl font-bold text-center mb-12">Our Expertise</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <h4 class="text-xl font-bold mb-4">Web Development</h4>
+                <p>Scalable web apps using modern frameworks.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <h4 class="text-xl font-bold mb-4">UI/UX Design</h4>
+                <p>User-centric design that converts visitors.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <h4 class="text-xl font-bold mb-4">Cloud Solutions</h4>
+                <p>Deploying robust apps on the cloud.</p>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
