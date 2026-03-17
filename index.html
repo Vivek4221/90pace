@@ -91,12 +91,21 @@
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
             <div>
                 <h2 class="text-4xl font-bold mb-8">Let's Talk Business</h2>
-                <form class="space-y-4">
-                    <input type="text" placeholder="Your Name" class="w-full p-4 bg-slate-50 rounded-2xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-emerald-500 outline-none">
-                    <input type="email" placeholder="Email Address" class="w-full p-4 bg-slate-50 rounded-2xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-emerald-500 outline-none">
-                    <textarea placeholder="Tell us about your project..." class="w-full p-4 bg-slate-50 rounded-2xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-emerald-500 outline-none h-40"></textarea>
-                    <button class="w-full bg-emerald-600 text-white py-4 rounded-2xl font-bold text-lg shadow-lg">Submit Request</button>
-                </form>
+                <form action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST" class="space-y-4">
+    <input type="text" name="name" placeholder="Your Name" required class="w-full p-4 bg-slate-50 rounded-2xl border-none ring-1 ring-slate-200">
+    <input type="email" name="email" placeholder="Email Address" required class="w-full p-4 bg-slate-50 rounded-2xl border-none ring-1 ring-slate-200">
+    
+    <select name="purpose" class="w-full p-4 bg-slate-50 rounded-2xl border-none ring-1 ring-slate-200">
+        <option value="ERP">ERP Development</option>
+        <option value="CRM">CRM Solutions</option>
+        <option value="Billing">Billing Software</option>
+        <option value="SEO">SEO Services</option>
+    </select>
+
+    <textarea name="message" placeholder="Project Details" required class="w-full p-4 bg-slate-50 rounded-2xl border-none ring-1 ring-slate-200 h-40"></textarea>
+    
+    <button type="submit" class="w-full bg-emerald-600 text-white py-4 rounded-2xl font-bold">Submit Request</button>
+</form>
             </div>
             <div>
                 <h2 class="text-2xl font-bold mb-4 italic text-slate-400 leading-snug tracking-tighter hover:not-italic underline underline-offset-4 decoration-emerald-500 cursor-pointer">Visit Our Office</h2>
